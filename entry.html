@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="space.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodlove</title>
+
+    <i><h1 style="text-align: center; text-decoration: underline; color: red;"> SIGN UP FOR FREE GAMING NEWS AND UPDATES</h1></i><br/>
+</head><br/>
+
+  
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1/3</div>
+
+      <img src="pic0.jpg" style="width: 100%;">
+
+      <div class="text" style="color: red;">GAME1</div>
+
+    </div>
+
+
+
+        <div class="mySlides fade">
+          <div class="numbertext">2/3</div>
+    
+          <img src="pic1.jpg" style="width: 100%;">
+    
+          <div class="text" style="color: red;">GAME2</div>
+    
+        </div>
+
+
+            <div class="mySlides fade">
+              <div class="numbertext">3/3</div>
+        
+              <img src="pic2.jpg" style="width: 100%;">
+        
+              <div class="text" style="color: red;">GAME3</div>
+        
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            
+
+</div><br/>
+
+<div style="text-align: center;">
+
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+
+</div>
+
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  var dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length){slideIndex =1}
+  if (n < 1) {slideIndex = slides.length}
+
+  for (i =0; i<slides.length; i++){slides[i].style.display = "none";}
+
+  for (i = 0; i < dots.length; i++){dots[i].className = dots[i].className.replace("active","");}
+
+  slides[slideIndex-1].style.display = "block";
+
+  dots[slideIndex-1].className += "active";
+}
+
+function what(){
+
+
+if(document.getElementByid("Firstname","USER").value==""){
+
+
+alert("fill in all info");
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+ 
+</script>
+
+
+
+<body style="background-image: url('monk.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+
+    
+   
+
+
+    <p style="color:red; text-align: center;"><i>Fill in the correct information to get started</i></p>
+
+    <form action="rex.php" method="POST" style="margin: 20px auto; width: 500px; background-color: red; color: #ffffff; border-radius: 5px; padding: 8px 20px;" onsubmit="return check()">
+
+        <h1 style="text-align: center; padding: 15px; border-bottom: 2px dashed green;">JOIN US</h1>
+
+        Username:<br/>
+        <input style="width: 95%; margin-top: 4px; padding: 10px; margin: 2px; overflow: hidden;" type="text" id="Firstname" name='username' required><br/>
+        Email:<br/> 
+       <input style="width: 95%; margin-top: 4px; padding: 10px; margin: 2px; overflow: hidden;" type="text" id="USER" placeholder="myname40@gmail.com" name="email" required><br/>
+        Password:<br/>
+        <input style="width: 95%; margin-top: 4px; padding: 10px; overflow: hidden;" type="password" id="pw" name="password" required><br/>
+        Confirm Password:<br/>
+        <input style="width: 95%; margin-top: 4px; padding: 10px; margin: 2px; overflow: hidden;" type="password" id="pw2" name="password2" required><br/><br/>
+
+        
+        <input style="background-color: cornflowerblue; color: #ffffff; border: 10px cornflowerblue; padding: 8px 130px; font-size: 16px; text-align: center;" type="submit" value="sign-up" name="register_btn" onsubmit="return what()">
+    
+        
+        
+    
+        
+        </form>
+
+       
+
+
+    
+</body>
+
+<footer style="text-align: center; color: red;">Love.com share feelings with friends and family<br/>WORLD WIDE</footer>
+
+
+</html>
