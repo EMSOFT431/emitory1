@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    span{
+
+
+        color: orange;
+    }
+
+    .b1{
+
+        background-color: #000000;
+        margin-top: -10px;
+        margin-left: -8px;
+        margin-right: -9px;
+        
+        
+            }
+
+            .sector1{
+
+width: 100%;
+padding: 20px 8px;
+text-align: center;
+background-color: white;
+border-radius: 19px;
+
+ }
+
+ .box1{
+
+font-weight: bold;
+
+
+ }
+
+ .shape{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 43%;
+
+
+
+ }
+
+ form{
+background-color: orange;
+width: 45%;
+border-radius: 8px;
+margin-left: 26%;
+padding: 25px;
+
+
+ }
+
+ input{
+width: 280px;
+overflow: hidden;
+border: #000000;
+border-style: solid;
+border-radius: 6px;
+
+ }
+
+ .dropbtn{
+    background-color: black;
+    color:white;
+    border: none;
+    cursor: pointer;
+    
+    
+                        }
+    
+                        .dropbtn:hover, .dropbtn:focus{
+    
+    background-color: #2980B9;
+    
+                        }
+    
+                        .dropdown{
+    
+                            position: relative;
+                            display: inline-block;
+    
+                        }
+    
+                        .content{
+    
+    display: none;
+    position:absolute;
+    background-color: red;
+    min-width: 160px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+    
+                        }
+    
+     .content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+    
+     }
+    
+     .content a:hover{background-color:#ddd}
+    
+     .show{display: block;}
+    
+    span{
+
+        color: red;
+    }
+
+
+
+</style>
+<script lang="text/Javascript">
+
+    function myFunction(){
+    
+    document.getElementById("myDropdown").classList.toggle("show");
+    
+    
+    window.onclick = function(event){
+    
+    if
+    (!event.target.matches('.dropbtn')){
+    
+    var dropdowns = document.getElementsByClassName("content");
+    var i;
+    
+    for (i=0; i<dropdowns.length; i++){
+    var openDropdown = dropdowns[i];
+    
+    if(openDropdown.classList.contains('show')){
+    
+    
+    openDropdown.classList.remove('show');
+    
+    }
+    
+    
+    }
+    
+    
+    }
+    
+    
+    
+    }
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+
+
+
+    
+</script>
+<body style="background-image: url('img2.jpg'); background-size:cover;">
+
+    <div class="b1">
+
+        <table width="100%" cellspacing="0">
+          
+            
+    <tr> 
+    
+        
+    
+        <td width="50%"><h1><a href="index.html" style="font-family: Arial Rounded MT Bold; color:white; text-decoration:none;"><i>Scissor<span>net</span></i></a></h1></td>
+    
+        <td width="8%" style="font-family: Arial Rounded MT Bold; color:white;">Home</td>
+        <td width="8%" class="services" style="font-family: Arial Rounded MT Bold; color:white;">
+            <div class="dropdown">
+     <button onclick="myFunction()" class="dropbtn">Services(click)</button>
+     
+     <div id="myDropdown" class="content">
+     <a href="barber.html">Barbers</a>
+     <a href="Hair.html">Hairdressers</a>
+     <a href="Mani.html">Manicure</a>
+     <a href="Massage.html">Massage</a>
+     
+     
+     </div>
+     
+     
+            </div>
+         </td>
+        <td width="8%" style="font-family: Arial Rounded MT Bold; color:rgb(248, 245, 245);">About us</td>
+        <td  width="8%" style="font-family: Arial Rounded MT Bold; color:white;"><a href="register.html" style="font-family: Arial Rounded MT Bold; color:white; text-decoration:none;">Signup
+            <img src="profile.jpg" alt="" width="20px"></a></td></tr>
+    </div>
+    
+    <tr>
+    
+    
+           
+    </table>
+    
+    
+    </div>
+
+
+
+    <div class="sector1">
+
+        <div class="shape"><img src="profile.jpg" alt=""></div>
+
+<h2 style="font-family: Arial Rounded MT Bold;"><i>ABOUT <span>US</span></i></h2>
+
+<p class="box1" style="font-family: Lucida Blackletter;">Due to the Covid-19 lockdown, dont get worried about your hair growing way beyond normal making you look like a troll or something Scissornet platform has been created to cover all that with a wide range of the best Barbers and hair dressers in Uganda</p>
+
+
+    </div>
+
+    <table width="100%">
+
+<tr>
+
+    <td rowspan="10"></td>
+
+
+
+
+
+
+</tr>
+
+<table width="100%">
+
+<tr style="margin-right: 0%; width:100%;">
+
+<td width="30%" style="text-align: center;" rowspan="10">
+
+<h3 style="font-family:Arial Rounded MT Bold ; font-size:20px; font-weight:bolder;"><i>TALK TO US</i></h3>
+
+<img src="loader.gif" alt="" width="30%">
+
+
+
+</td>
+<td style="text-align: center;" rowspan="10">
+<label for="review" style="color: rgb(143, 94, 5); font:20px; color:black;"><b>SEND A REVIEW</b></label><br>
+
+<form action="">
+
+    NAME:<br>
+
+    <input type="text" name="name" id="name" required="yes" style="padding: 5px;"><br><br>
+
+    EMAIL:<br>
+
+    <input type="text" name="email" id="email" required="yes" style="padding: 5px;"><br><br>
+    
+    MESSAGE:<br>
+
+
+    <input type="text" name="msg" id="msg" required="yes" style="height:50px;"><br><br>
+
+    <input type="submit" value="Submit" style="width: 90px; padding:10px; background-color:red; color:#ffffff;">
+
+
+</form>
+
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+<div class="b3" width="100%" style="background-color: black; margin-bottom:-10px; margin-left:-8px; margin-right:-9px; margin-top:-20px; text-align:center;">
+
+    <h2 style="font-family: Arial Rounded MT Bold; color:#ffffff;">SOC<span>IAL</span></h2>
+    
+    <img src="fb.png" alt="" height="50px" width="50px" style="border-radius: 50%;">
+    <img src="insta.png" alt="" height="50px" width="50px" style="border-radius: 50%;">
+    <img src="tw.png" alt="" height="50px" width="50px" style="border-radius: 50%;">
+    
+    
+    </div>
+
+
+
+
+    
+</body>
+</html>
